@@ -1,0 +1,38 @@
+{
+    "name": "Desktop Instagram",
+    "version": "0.0.1",
+    "description": "Desktop Instagram View",
+    "browser_action": {
+        "default_icon": "img/icon.png",
+        "default_title": "Desktop Instagram"
+    },
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ],
+        "persistent": false
+    },
+    "icons": {
+        "128": "img/icon.png"
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab",
+        "*://*.instagram.com/*",
+        "https://www.instagram.com/"
+    ],
+
+    "content_scripts": [{
+        "run_at": "document_start",
+        "all_frames": true,
+        "matches": [
+            "https://www.instagram.com/*"
+        ],
+        "js": [
+            "index.js"
+        ]
+    }],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "manifest_version": 2
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/content.css">
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="index.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        
+        .row.content {
+            height: 450px
+        }
+        /* Set gray background color and 100% height */
+        
+        .sidenav {
+            padding-top: 50px;
+            background-color: #ffffff;
+            height: 100%;
+        }
+        
+        .contentnav {
+            padding-top: 50px;
+        }
+        /* Set black background color, white text and some padding */
+        
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+        
+        #instaframe {
+            display: none;
+        }
+        
+        .phone-image {
+            background-image: url("img/iPhoneXR_Black.png");
+            height: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="#">Desktop Instagram</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-1 sidenav">
+            </div>
+            <div class="col-sm-2 sidenav">
+                <div class="funkyradio">
+                    <div class="funkyradio-primary">
+                        <input type="radio" name="radio" id="radio1" />
+                        <label for="radio1">iPhone XR</label>
+                    </div>
+                    <div class="funkyradio-success">
+                        <input type="radio" name="radio" id="radio2" checked/>
+                        <label for="radio2">iPad Air</label>
+                    </div>
+                    <div class="funkyradio-info">
+                        <input type="radio" name="radio" id="radio3" />
+                        <label for="radio3">Galaxy Note 10</label>
+                    </div>
+                    <div class="funkyradio-warning">
+                        <input type="radio" name="radio" id="radio4" />
+                        <label for="radio4">Galaxy S10+</label>
+                    </div>
+                    <div class="funkyradio-default">
+                        <input type="radio" name="radio" id="radio5" />
+                        <label for="radio5">Google Pixel 3 XL</label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 contentnav">
+                <div style="position: absolute;">
+                    <img src="img/iPhoneXR_Black.png" style="height:726px;width: 400px" />
+                </div>
+                <div style="padding-left: 40px;padding-top:30px;width:200px;height: 650px;">
+                    <iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/p/BlMg3iolq9e/embed?utm_source=ig_embedembed/captioned/?cr=1&amp;v=9&amp;wp=1044&amp;rd=calypsojetpackbleedingedge.mystagingwebsite.com#%7B%22ci%22%3A0%2C%22os%22%3A1685.1000000024214%7D"
+                        allowtransparency="true" frameborder="0" height="670" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white; max-width: 525px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe>
+                </div>
+            </div>
+            <div class="col-sm-2 sidenav">
+                <div class="funkyradio">
+                    <div class="funkyradio-info">
+                        <input type="radio" name="color" id="color1" />
+                        <label for="color1" style="background-color: #555;color: #ffffff">Black</label>
+                    </div>
+                    <div class="funkyradio-info">
+                        <input type="radio" name="color" id="color2" />
+                        <label for="color2">White</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1 sidenav"></div>
+        </div>
+
+</body>
+
+</html>
